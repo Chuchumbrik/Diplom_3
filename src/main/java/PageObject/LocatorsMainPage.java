@@ -3,16 +3,13 @@ package PageObject;
 import org.openqa.selenium.By;
 
 public class LocatorsMainPage {
-    public static final By buttonPersonalCabinet = By.xpath("//*[@id=\"root\"]/div/header/nav/a");
-    public static final By buttonSignInAccount = By.xpath("//*[@id=\"root\"]/div/main/section[2]/div/button");
-    public static final By buttonMakeOrder = By.xpath("/html/body/div/div/main/section[2]/div/button");
-    public static final By buttonConstructor = By.xpath("//*[@id=\"root\"]/div/header/nav/ul/li[1]/a");
-    public static final By textAssembleBurger = By.xpath("//*[@id=\"root\"]/div/main/section[1]/h1");
-    public static final By bun = By.xpath("//*[@id=\"root\"]/div/main/section[1]/div[1]/div[1]");
-    public static final By bunInConstructor = By.xpath("//*[@id=\"root\"]/div/main/section[1]/div[2]/h2[1]");
-    public static final By sauces = By.xpath("//*[@id=\"root\"]/div/main/section[1]/div[1]/div[2]");
-    public static final By saucesInConstructor = By.xpath("//*[@id=\"root\"]/div/main/section[1]/div[2]/h2[2]");
-    public static final By filling = By.xpath("//*[@id=\"root\"]/div/main/section[1]/div[1]/div[3]");
-    public static final By fillingInConstructor = By.xpath("//*[@id=\"root\"]/div/main/section[1]/div[2]/h2[3]");
-    public static final By activeElementConstructor = By.xpath("//div[contains(@class, 'tab_tab_type_current')]/span[contains(@class, 'text_type_main-default')]");
+    public static final By PERSONAL_ACCOUNT_BUTTON = By.xpath("//*[@id=\"root\"]/div/header/nav/a");
+    public static final By ACCOUNT_SIGNIN_BUTTON = By.xpath(".//button[text()='Войти в аккаунт']");
+    public static final By MAKE_ORDER_BUTTON = By.xpath("/html/body/div/div/main/section[2]/div/button");
+    public static final By BURGER_CONSTRUCTOR_BUTTON = By.xpath("//*[@id=\"root\"]/div/header/nav/ul/li[1]/a");
+    public static final By MAKE_BURGER_TEXT = By.xpath("//*[@id=\"root\"]/div/main/section[1]/h1");
+    public static final By BUN = By.xpath(".//span[text()='Булки']");
+    public static final By SAUCES = By.xpath(".//span[text()='Соусы']");
+    public static final By FILLING = By.xpath(".//span[text()='Начинки']");
+    public static final By ACTIVE_TAB = By.className("tab_tab_type_current__2BEPc");
 }

@@ -3,16 +3,12 @@ package PageObject;
 import org.openqa.selenium.By;
 
 public class LocatorsRegistrationPage {
-    public static final By buttonRegister1 = By.xpath("//*[@id=\"root\"]/div/main/div/div/p[1]/a");
-    public static final By fieldName = By.xpath("//*[@id=\"root\"]/div/main/div/form/fieldset[1]/div/div/input");
-    public static final By fieldEmail = By.xpath("//*[@id=\"root\"]/div/main/div/form/fieldset[2]/div/div/input");
-    public static final By fieldPassword = By.xpath("//*[@id=\"root\"]/div/main/div/form/fieldset[3]/div/div/input");
-    public static final By buttonRegister2 = By.xpath("//*[@id=\"root\"]/div/main/div/form/button");
-    public static final By textIncorrectPassword = By.xpath("//*[@id=\"root\"]/div/main/div/form/fieldset[3]/div/p");
-    public static final By signInlink = By.xpath("//*[@id=\"root\"]/div/main/div/div/p/a");
 
-
-
-
-
+    public static final By SIGN_IN_BUTTON = By.xpath(".//a[text()='Войти']");
+    public static final By REGISTRATION_BUTTON = By.xpath("//*[@id=\"root\"]/div/main/div/div/p[1]/a");
+    public static final By FINAL_REG_BUTTON = By.xpath("//*[@id=\"root\"]/div/main/div/form/button");
+    public static final By NAME_INPUT = By.xpath(".//form/fieldset[1]/div/div/input");
+    public static final By EMAIL_INPUT = By.xpath(".//form/fieldset[2]/div/div/input");
+    public static final By PASSWORD_INPUT = By.xpath(".//form/fieldset[3]/div/div/input");
+    public static final By INVALID_PASS = By.xpath(".//p[text()='Некорректный пароль']");
 }
